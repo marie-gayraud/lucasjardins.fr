@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucasjardins - Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
+</head>
+<body>
+    <!-- Menu Navigation -->
+    <nav x-data="{ isOpen: false }" class="main-nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">LucasJardins</a>
+                </div>
+
+                <div class="desktop-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="achievements.html" class="nav-link">Réalisations</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Nous contacter</a>
+                </div>
+
+                <div class="mobile-menu-button">
+                    <button @click="isOpen = !isOpen" class="menu-toggle">
+                        <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div x-show="isOpen" class="mobile-menu">
+                <a href="index.html" class="mobile-link">Accueil</a>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="achievements.html" class="mobile-link">Réalisations</a>
+                <a href="faq.html" class="mobile-link">FAQ</a>
+                <a href="contact.html" class="mobile-link">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="top">
+        <div class="top-content">
+            <h1 class="top-title">Contact</h1>
+        </div>
+    </header>
+
+    <ul class="breadcrumb">
+        <li><a href="index.html">Accueil</a></li>
+        <li>Contact</li>
+    </ul>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Nos coordonnées</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>123 Rue des Jardins<br>75000 Paris</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>01 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@lucasjardins.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Horaires d'ouverture</h3>
+                            <p>Lundi - Vendredi : 9h - 18h<br>
+                            Samedi : 9h - 12h<br>
+                            Dimanche : Fermé</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2 class="section-title">Envoyez-nous un message</h2>
+                    <form id="contactForm" action="#" method="POST" x-data="{ formSubmitted: false, formError: false }">
+                        <div class="form-group">
+                            <label for="name">Nom et Prénom *</label>
+                            <input type="text" id="name" name="name" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required class="form-control">
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="rendez-vous">Prise de rendez-vous</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="form-control"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">J'accepte que mes données soient utilisées pour traiter ma demande *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button 
+                                type="submit" 
+                                class="submit-button"
+                                @click.prevent="
+                                    if(document.getElementById('contactForm').checkValidity()) { 
+                                        formSubmitted = true;
+                                        setTimeout(() => {
+                                            document.getElementById('contactForm').reset();
+                                        }, 500);
+                                    } else {
+                                        formError = true;
+                                        setTimeout(() => { formError = false }, 3000);
+                                    }">Envoyer
+                            </button>
+                        </div>
+                        
+                        <div x-show="formSubmitted" class="form-success">
+                            Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.
+                        </div>
+                        
+                        <div x-show="formError" class="form-error">
+                            Veuillez remplir correctement tous les champs obligatoires.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nous trouver</h2>
+            <a href="https://www.google.fr/maps/place/Av.+des+Jardins,+75017+Paris/@48.8985969,2.3163444,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66f073c29a625:0xc159ac7fd8b38463!8m2!3d48.8985969!4d2.3189193!16s%2Fg%2F11b5rd99k6?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D">Voir la localisation sur GoogleMap</a>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 LucasJardins. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

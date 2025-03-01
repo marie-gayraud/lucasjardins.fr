@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucasjardins - Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
+</head>
+<body>
+    <!-- Menu Navigation -->
+    <nav x-data="{ isOpen: false, servicesOpen: false }" class="main-nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">LucasJardins</a>
+                </div>
+
+                <div class="desktop-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    
+                    <!-- Services avec sous-menu -->
+                    <div class="dropdown" @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
+                        <a href="services.html" class="nav-link">Services</a>
+                        <div x-show="servicesOpen" class="dropdown-content">
+                            <a href="service-1.html" class="submenu-link">Conception de jardin</a>
+                            <a href="service-2.html" class="submenu-link">Aménagement paysager</a>
+                            <a href="service-3.html" class="submenu-link">Entretien des jardins</a>
+                            <a href="service-4.html" class="submenu-link">Plantation arbres et arbustes</a>
+                            <a href="service-5.html" class="submenu-link">Systèmes d'irrigation</a>
+                            <a href="service-6.html" class="submenu-link">Création potagers et aromatiques</a>
+                            <a href="service-7.html" class="submenu-link">Aménagement terrasses et balcons</a>
+                            <a href="service-8.html" class="submenu-link">Gestion nuisibles et maladies</a>
+                            <a href="service-9.html" class="submenu-link">Éclairage de jardin</a>
+                            <a href="service-10.html" class="submenu-link">Consultation en jardinage</a>
+                        </div>
+                    </div>
+                    
+                    <a href="achievements.html" class="nav-link">Réalisations</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Nous contacter</a>
+                </div>
+
+                <div class="mobile-menu-button">
+                    <button @click="isOpen = !isOpen" class="menu-toggle">
+                        <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div x-show="isOpen" class="mobile-menu">
+                <a href="index.html" class="mobile-link">Accueil</a>
+                
+                <!-- Services avec sous-menu mobile -->
+                <div class="mobile-dropdown">
+                    <a href="services.html" class="mobile-link">Services</a>
+                    <button @click="servicesOpen = !servicesOpen" class="mobile-submenu-toggle">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                            <path x-show="!servicesOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path x-show="servicesOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                        </svg>
+                    </button>
+                    <div x-show="servicesOpen" class="mobile-submenu">
+                        <a href="service-1.html" class="mobile-submenu-link">Service 1</a>
+                        <a href="service-2.html" class="mobile-submenu-link">Service 2</a>
+                        <a href="service-3.html" class="mobile-submenu-link">Service 3</a>
+                        <a href="service-4.html" class="mobile-submenu-link">Service 4</a>
+                        <a href="service-5.html" class="mobile-submenu-link">Service 5</a>
+                        <a href="service-6.html" class="mobile-submenu-link">Service 6</a>
+                        <a href="service-7.html" class="mobile-submenu-link">Service 7</a>
+                        <a href="service-8.html" class="mobile-submenu-link">Service 8</a>
+                        <a href="service-9.html" class="mobile-submenu-link">Service 9</a>
+                        <a href="service-10.html" class="mobile-submenu-link">Service 10</a>
+                    </div>
+                </div>
+                
+                <a href="achievements.html" class="mobile-link">Réalisations</a>
+                <a href="faq.html" class="mobile-link">FAQ</a>
+                <a href="contact.html" class="mobile-link">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+         
+    <header class="top">
+        <div class="top-content">
+            <h1 class="top-title">Une gamme complète de services</h1>
+            <h2>Cliquez sur chaque lien pour voir les détails</h2>
+        </div>
+    </header>
+
+    <ul class="breadcrumb">
+        <li><a href="index.html">Accueil</a></li>
+        <li>Services</li>
+    </ul>
+
+    <section class="main-section">
+        <div>
+            <ul>
+                <li><a href="service-1.html">Conception de jardin</a></li>
+                <li><a href="service-2.html">Aménagement paysager</a></li>
+                <li><a href="service-3.html">Entretien des jardins</a></li>
+                <li><a href="service-4.html">Plantation arbres et arbustes</a></li>
+                <li><a href="service-5.html">Systèmes d'irrigation</a></li>
+                <li><a href="service-6.html">Création potagers et aromatiques</a></li>
+                <li><a href="service-7.html">Aménagement terrasses et balcons</a></li>
+                <li><a href="service-8.html">Gestion nuisibles et maladies</a></li>
+                <li><a href="service-9.html">Éclairage de jardin</a></li>
+                <li><a href="service-10.html">Consultation en jardinage</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 LucasJardins. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

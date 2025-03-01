@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucasjardins - Réalisations</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
+</head>
+<body>
+    <!-- Menu Navigation -->
+    <nav x-data="{ isOpen: false }" class="main-nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">LucasJardins</a>
+                </div>
+
+                <div class="desktop-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="achievements.html" class="nav-link">Réalisations</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contact.html" class="nav-link">Nous contacter</a>
+                </div>
+
+                <div class="mobile-menu-button">
+                    <button @click="isOpen = !isOpen" class="menu-toggle">
+                        <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div x-show="isOpen" class="mobile-menu">
+                <a href="index.html" class="mobile-link">Accueil</a>
+                <a href="services.html" class="mobile-link">Services</a>
+                <a href="achievements.html" class="mobile-link">Réalisations</a>
+                <a href="faq.html" class="mobile-link">FAQ</a>
+                <a href="contact.html" class="mobile-link">Nous contacter</a>
+            </div>
+        </div>
+    </nav>
+            
+    <header class="top">
+        <div class="top-content">
+            <h1 class="top-title">Réalisations</h1>
+        </div>
+    </header>
+
+    <ul class="breadcrumb">
+        <li><a href="index.html">Accueil</a></li>
+        <li>Réalisations</li>
+    </ul>
+
+    <section class="main-section">
+        <div>
+            <p>ajouter réalisations ici</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 LucasJardins. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
