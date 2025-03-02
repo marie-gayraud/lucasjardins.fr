@@ -13,7 +13,7 @@ Etape 2 (marie-gayraud, le 02/03/2025):
 - Gestion d'un sous-menu pour afficher les différents services
 - Modification de la page contact pour ajouter un formulaire de prise de contact, des coordonnées postales et téléphonique, horaires d'ouverture
 - Ajout des textes de description des services sur la page accueil
-- Ajout des 10 différntes catégories de services sur la page services.html
+- Ajout des 10 différentes catégories de services sur la page services.html
   
 
   
