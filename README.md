@@ -12,4 +12,5 @@ Etape 2 (marie-gayraud, le 02/03/2025):
 - Ajout de 10 pages de services pour gérer chacun des services
 - Gestion d'un sous-menu pour afficher les différents services
 - Modification de la page contact pour ajouter un formulaire de prise de contact, des coordonnées postales et téléphonique, horaires d'ouverture
-- 
+
+  
