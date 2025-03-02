@@ -7,6 +7,7 @@ Etape 1 (marie-gayraud, le 01/03/2025):
 - Ajout d'un menu horizontal avec les liens Contact, Services, Réalisation, FAQ
 - Ajout d'un burger menu pour pouvoir afficher les menu horizonal sous format vertical pour les smartphones
 - Ajout du fil d'ariane "breadcrumbs" sur chaque page pour indiquer l'organisation de chaque page
+  
 Etape 2 (marie-gayraud, le 02/03/2025):
 - Ajout de 10 pages de services pour gérer chacun des services
 - Gestion d'un sous-menu pour afficher les différents services
