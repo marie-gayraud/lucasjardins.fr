@@ -14,6 +14,9 @@ Etape 2 (marie-gayraud, le 02/03/2025):
 - Modification de la page contact pour ajouter un formulaire de prise de contact, des coordonnées postales et téléphonique, horaires d'ouverture
 - Ajout des textes de description des services sur la page accueil
 - Ajout des 10 différentes catégories de services sur la page services.html
-  
+
+Etape 3 (marie-gayraud, le 18/03/2025):
+- Ajout des descriptions textuelles des pages service 1 et service 2
+- Ajout des photos et mise à jour du css pour ajouter un ombrage 
 
   
