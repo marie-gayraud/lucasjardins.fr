@@ -681,3 +681,111 @@ main {
     font-size: 2rem;
 
 }
+
+/* Style de base pour la section */
+.main-sectione {
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    padding: 60px 20px; /* Espacement intérieur */
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    color: #333; /* Couleur de texte principale */
+    overflow: hidden; /* Cache les débordements d'animations */
+}
+
+/* Conteneur pour centrer le contenu et limiter la largeur */
+.containere {
+    max-width: 800px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrage horizontal */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+/* Animation d'apparition pour les éléments */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style des paragraphes avec animation */
+.containere p {
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+    font-size: 1.1em; /* Taille de police légèrement augmentée */
+    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
+    animation-fill-mode: both; /* Garde l'état final de l'animation */
+}
+
+.containere p:nth-child(1) { animation-delay: 0.2s; }
+.containere p:nth-child(2) { animation-delay: 0.4s; }
+.containere p:nth-child(3) { animation-delay: 0.6s; }
+
+/* Style de la liste à puces avec animation */
+.containere ul {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime le padding par défaut */
+    margin-bottom: 20px; /* Espacement après la liste */
+}
+
+.containere ul li {
+    padding: 15px; /* Espacement intérieur */
+    margin: 10px 0; /* Espacement entre les éléments */
+    background-color: white; /* Fond blanc */
+    border: 1px solid #e0e0e0; /* Bordure subtile */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    font-size: 1em; /* Taille de police */
+    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
+    animation-fill-mode: both; /* Garde l'état final de l'animation */
+}
+
+.containere ul li:nth-child(1) { animation-delay: 0.8s; }
+.containere ul li:nth-child(2) { animation-delay: 1.0s; }
+.containere ul li:nth-child(3) { animation-delay: 1.2s; }
+.containere ul li:nth-child(4) { animation-delay: 1.4s; }
+.containere ul li:nth-child(5) { animation-delay: 1.6s; }
+.containere ul li:nth-child(6) { animation-delay: 1.8s; }
+
+/* Style du paragraphe de contact */
+.contacte {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: white; /* Texte en blanc */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: center; /* Centrage du texte */
+    font-weight: bold; /* Texte en gras */
+    margin-top: 30px; /* Espacement avant le paragraphe */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
+    animation-delay: 2s; /* Délai d'animation */
+    animation-fill-mode: both; /* Garde l'état final de l'animation */
+}
+
+/* Effet au survol pour le paragraphe de contact */
+.contacte:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Légère augmentation de taille */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition douce */
+}
+
+/* Style pour les titres (optionnel, si vous ajoutez un titre plus tard) */
+.containere h2 {
+    font-size: 2em; /* Taille de police */
+    color: #4CAF50; /* Couleur verte */
+    margin-bottom: 20px; /* Espacement après le titre */
+    text-align: center; /* Centrage du titre */
+    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
+    animation-fill-mode: both; /* Garde l'état final de l'animation */
+}
+
+/* Amélioration de la typographie pour les liens (optionnel) */
+.containere a {
+    color: #4CAF50; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.containere a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
