@@ -7,6 +7,82 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Consultation en jardinage",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "LucasJardins",
+            "description": "Service professionnel de consultation en jardinage offrant des conseils personnalisés et des solutions adaptées à chaque espace vert.",
+            "url": "https://www.lucasjardins.com",
+            "logo": "https://www.lucasjardins.com/logo.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ville",
+                "addressRegion": "Région",
+                "postalCode": "Code Postal",
+                "streetAddress": "Adresse"
+            },
+            "telephone": "+33X XX XX XX XX",
+            "sameAs": [
+                "https://www.facebook.com/lucasjardins",
+                "https://www.instagram.com/lucasjardins"
+            ]
+        },
+        "description": "Conseils et recommandations personnalisés pour les propriétaires de jardins, y compris des évaluations de sol et des suggestions de plantes.",
+        "offers": {
+            "@type": "Offer",
+            "priceRange": "$$",
+            "description": "Consultation professionnelle en jardinage avec des experts paysagistes"
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Région desservie"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services de consultation",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Expertise Professionnelle",
+                        "description": "Conseils d'experts expérimentés pour répondre à tous vos besoins en jardinage"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Solutions Personnalisées",
+                        "description": "Recommandations adaptées à votre espace, climat et préférences"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Approche Durable",
+                        "description": "Méthodes respectueuses de l'environnement pour un jardin sain et écologique"
+                    }
+                }
+            ]
+        },
+        "serviceOutput": {
+            "@type": "WebAPI",
+            "documentation": "https://www.lucasjardins.com/consultation-process"
+        },
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://www.lucasjardins.com/contact",
+            "servicePhone": "+33X XX XX XX XX",
+            "availableLanguage": ["French"]
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Menu Navigation -->
