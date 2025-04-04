@@ -7,6 +7,83 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Éclairage de jardin",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "LucasJardins",
+            "description": "Entreprise spécialisée dans l'éclairage paysager et extérieur",
+            "url": "https://www.lucasjardins.com",
+            "logo": "https://www.lucasjardins.com/logo.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Rue des Jardins",
+                "addressLocality": "Ville",
+                "addressRegion": "Région",
+                "postalCode": "75000",
+                "addressCountry": "FR"
+            },
+            "telephone": "+33123456789",
+            "openingHours": "Mo-Fr 08:00-18:00",
+            "priceRange": "€€-€€€",
+            "sameAs": [
+                "https://www.facebook.com/lucasjardins",
+                "https://www.instagram.com/lucasjardins"
+            ]
+        },
+        "description": "Installation d'éclairage extérieur pour mettre en valeur les éléments du jardin et prolonger l'utilisation des espaces extérieurs après le coucher du soleil",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services d'éclairage extérieur",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Éclairage d'Ambiance",
+                        "description": "Solutions lumineuses pour créer une atmosphère chaleureuse dans votre jardin",
+                        "material": "LED, éclairage solaire"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Éclairage Fonctionnel",
+                        "description": "Installation d'éclairage sécuritaire pour les chemins et accès",
+                        "material": "Borne lumineuse, projecteur LED"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Éclairage Décoratif",
+                        "description": "Mise en valeur des éléments architecturaux et paysagers de votre jardin",
+                        "material": "Spot encastré, projecteur design"
+                    }
+                }
+            ]
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Île-de-France",
+            "description": "Service disponible dans toute la région Île-de-France"
+        },
+        "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": "Technologies",
+            "value": "Éclairage LED écoénergétique, solutions solaires et intelligentes"
+        },
+        "serviceOutput": {
+            "@type": "WebAPI",
+            "documentation": "https://www.lucasjardins.com/eclairage-jardin"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Menu Navigation -->
@@ -77,7 +154,7 @@
                     Créez une atmosphère chaleureuse avec des lumières douces et tamisées. 
                     Idéal pour les terrasses, les allées et les zones de détente.
                 </p>
-                <img src="img/eclairageambiance.png " alt="Éclairage d'ambiance pour jardin">
+                <img src="img/eclairageambiance.png" alt="Éclairage d'ambiance pour jardin">
             </div>
             <div class="service-card">
                 <h3>Éclairage Fonctionnel</h3>
