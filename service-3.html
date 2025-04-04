@@ -7,6 +7,106 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Entretien des jardins",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "LucasJardins",
+            "description": "Service professionnel d'entretien de jardins offrant des solutions complètes pour l'entretien régulier des espaces verts.",
+            "url": "https://www.lucasjardins.com",
+            "logo": "https://www.lucasjardins.com/logo.png",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ville",
+                "addressRegion": "Région",
+                "postalCode": "Code Postal",
+                "streetAddress": "Adresse"
+            },
+            "telephone": "+33X XX XX XX XX",
+            "sameAs": [
+                "https://www.facebook.com/lucasjardins",
+                "https://www.instagram.com/lucasjardins"
+            ]
+        },
+        "description": "Taille, tonte, désherbage, arrosage, fertilisation et autres tâches d'entretien régulier des jardins.",
+        "offers": {
+            "@type": "Offer",
+            "priceRange": "$$",
+            "description": "Service complet d'entretien de jardin avec forfaits personnalisables"
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Région desservie"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services d'entretien",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tonte de Pelouse",
+                        "description": "Tonte régulière et soignée pour maintenir votre pelouse impeccable"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Taille des Haies",
+                        "description": "Taille précise pour une forme esthétique et une croissance optimale"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Entretien des Fleurs et Plantes",
+                        "description": "Soins complets incluant arrosage, fertilisation et désherbage"
+                    }
+                }
+            ]
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Marie D."
+                },
+                "reviewBody": "LucasJardin a transformé mon jardin en un véritable paradis vert. Leur équipe est professionnelle et attentionnée."
+            },
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Jean P."
+                },
+                "reviewBody": "Je recommande LucasJardin à tous ceux qui veulent un jardin bien entretenu sans se prendre la tête."
+            }
+        ],
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://www.lucasjardins.com/contact",
+            "servicePhone": "+33X XX XX XX XX",
+            "availableLanguage": ["French"]
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Menu Navigation -->
@@ -21,106 +121,4 @@
                     <a href="index.html" class="nav-link">Accueil</a>
                     <a href="services.html" class="nav-link">Services</a>
                     <a href="achievements.html" class="nav-link">Réalisations</a>
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                    <a href="contact.html" class="nav-link">Nous contacter</a>
-                </div>
-
-                <div class="mobile-menu-button">
-                    <button @click="isOpen = !isOpen" class="menu-toggle">
-                        <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path x-show="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                            <path x-show="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div x-show="isOpen" class="mobile-menu">
-                <a href="index.html" class="mobile-link">Accueil</a>
-                <a href="services.html" class="mobile-link">Services</a>
-                <a href="achievements.html" class="mobile-link">Réalisations</a>
-                <a href="faq.html" class="mobile-link">FAQ</a>
-                <a href="contact.html" class="mobile-link">Nous contacter</a>
-            </div>
-        </div>
-    </nav>
-         
-    <header class="top">
-        <div class="top-content">
-            <h1 class="top-title">Entretien des jardins</h1>
-            <h2>Taille, tonte, désherbage, arrosage, fertilisation et autres tâches d'entretien régulier.</h2>
-        </div>
-    </header>
-
-    <ul class="breadcrumb">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li>Entretien des jardins</li>
-    </ul>
-    
-    <section class="main-section">
-        <!-- Section d'introduction -->
-        <section class="intro-section">
-            <h1>Entretien de Jardin par LucasJardin</h1>
-            <p>
-                Chez LucasJardin, nous offrons des services d'entretien de jardin professionnels pour garder vos espaces verts en parfait état toute l'année. Que ce soit pour la tonte, la taille des haies, ou l'entretien des fleurs, notre équipe est là pour vous.
-            </p>
-            <!-- <img src="images/entretien-jardin.jpg" alt="Équipe de LucasJardin en train d'entretenir un jardin"> -->
-        </section>
-    
-        <!-- Section des services -->
-        <section class="services-section">
-            <h2>Nos Services d'Entretien</h2>
-            <div class="service">
-                <h3>Tonte de Pelouse</h3>
-                <p>
-                    Nous assurons une tonte régulière et soignée pour maintenir votre pelouse toujours impeccable.
-                </p>
-                <!-- <img src="images/tonte-pelouse.jpg" alt="Tonte de pelouse par LucasJardin"> -->
-            </div>
-            <div class="service">
-                <h3>Taille des Haies</h3>
-                <p>
-                    Nos experts taillent vos haies avec précision pour leur donner une forme esthétique et favoriser leur croissance.
-                </p>
-                <!-- <img src="images/taille-haies.jpg" alt="Taille de haies par LucasJardin"> -->
-            </div>
-            <div class="service">
-                <h3>Entretien des Fleurs et Plantes</h3>
-                <p>
-                    Nous prenons soin de vos fleurs et plantes en les arrosant, fertilisant et enlevant les mauvaises herbes.
-                </p>
-                <!-- <img src="images/entretien-fleurs.jpg" alt="Entretien des fleurs par LucasJardin"> -->
-            </div>
-        </section>
-    
-        <!-- Section témoignages -->
-        <section class="testimonials-section">
-            <h2>Ce que disent nos clients</h2>
-            <div class="testimonial">
-                <blockquote>
-                    "LucasJardin a transformé mon jardin en un véritable paradis vert. Leur équipe est professionnelle et attentionnée."
-                </blockquote>
-                <p>- Marie D.</p>
-            </div>
-            <div class="testimonial">
-                <blockquote>
-                    "Je recommande LucasJardin à tous ceux qui veulent un jardin bien entretenu sans se prendre la tête."
-                </blockquote>
-                <p>- Jean P.</p>
-            </div>
-        </section>
-    
-        <!-- Section appel à l'action -->
-        <footer class="main-footer">
-            <h2>Prêt à embellir votre jardin ?</h2>
-            <p>
-                Contactez-nous dès aujourd'hui pour un devis gratuit et découvrez comment nous pouvons vous aider à entretenir votre jardin.
-            </p>
-            <a href="contact.html" class="cta-button">Contactez-nous</a>
-            <!-- <img src="images/jardin-embelli.jpg" alt="Jardin entretenu par LucasJardin"> -->
-        </footer>
-    </section>
-
-</body>
-</html>
+                    <a href="faq.html" class="nav-link">FAQ</
