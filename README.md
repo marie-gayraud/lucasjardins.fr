@@ -1,6 +1,7 @@
 # lucasjardins.fr
 Etape 1 (marie-gayraud, le 01/03/2025): 
 - Création d'un "repository" sur github pour pouvoir stocker et partager le code source
+  https://github.com/marie-gayraud/lucasjardins.fr
 - Création d'une page index.html avec un fichier css contenant des couleurs sur les tons de vert pour être dans le thême des plantes
 - Ajout de 3 sections sur chaque page: header, section, footer
 - Ajout de pages vierges contact.html, services.html , achievements.html, faq.html
