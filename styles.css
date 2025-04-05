@@ -236,7 +236,6 @@ ul.breadcrumb {
     background-color: #f1f1f1;
 }
 
-/* Styles pour le sous-menu mobile */
 .mobile-dropdown {
     position: relative;
 }
@@ -262,9 +261,6 @@ ul.breadcrumb {
     text-decoration: none;
     color: currentColor;
 }
-
-
-
 
 .contact-section {
     padding: 4rem 0;
@@ -321,7 +317,6 @@ ul.breadcrumb {
     border-radius: 4px;
     font-size: 1rem;
 }
-
 
 textarea.form-control {
     resize: vertical;
@@ -434,21 +429,7 @@ ul li {
     margin: 10px 0;
 }
 
-/* service 3*/
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* service 3 */
 
 h1, h2, h3 {
     color: #16ac20;
@@ -474,7 +455,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* Section d'introduction */
 .service-intro {
     text-align: center;
     margin-bottom: 40px;
@@ -485,7 +465,6 @@ p {
     margin: 0 auto;
 }
 
-/* Section des détails des services */
 .service-details {
     margin-bottom: 40px;
 }
@@ -512,7 +491,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* Section "Pourquoi nous choisir" */
 .why-choose-us {
     background-color: #f0f8f0;
     padding: 20px;
@@ -556,39 +534,8 @@ p {
     margin-bottom: 20px;
 }
 
-.cta-button {
-    background-color: #fff;
-    color: #16ac20;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #f0f0f0;
-}
-
 /* Service 4 */
-/* Style général */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Section d'introduction */
 .service-intro {
     text-align: center;
     margin-bottom: 40px;
@@ -607,7 +554,6 @@ main {
     margin: 0 auto;
 }
 
-/* Section des détails des services */
 .service-details {
     display: flex;
     flex-wrap: wrap;
@@ -641,7 +587,6 @@ main {
     color: #666;
 }
 
-/* Section CTA */
 .service-cta {
     text-align: center;
     background-color: #f0f0f0;
@@ -682,20 +627,18 @@ main {
 
 }
 
-/* Style de base pour la section */
 .main-sectione {
-    background-color: #f9f9f9; /* Couleur de fond douce */
-    padding: 60px 20px; /* Espacement intérieur */
-    font-family: 'Arial', sans-serif; /* Police de caractères */
-    color: #333; /* Couleur de texte principale */
-    overflow: hidden; /* Cache les débordements d'animations */
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    color: #333; 
+    overflow: hidden; 
 }
 
 /* Conteneur pour centrer le contenu et limiter la largeur */
 .containere {
-    max-width: 800px; /* Largeur maximale du contenu */
-    margin: 0 auto; /* Centrage horizontal */
-    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    max-width: 800px; 
+    margin: 0 auto; 
+    line-height: 1.6; 
 }
 
 /* Animation d'apparition pour les éléments */
@@ -712,10 +655,10 @@ main {
 
 /* Style des paragraphes avec animation */
 .containere p {
-    margin-bottom: 20px; /* Espacement entre les paragraphes */
-    font-size: 1.1em; /* Taille de police légèrement augmentée */
-    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
-    animation-fill-mode: both; /* Garde l'état final de l'animation */
+    margin-bottom: 20px; 
+    font-size: 1.1em; 
+    animation: fadeInUp 0.8s ease-out; 
+    animation-fill-mode: both; 
 }
 
 .containere p:nth-child(1) { animation-delay: 0.2s; }
@@ -724,21 +667,21 @@ main {
 
 /* Style de la liste à puces avec animation */
 .containere ul {
-    list-style-type: none; /* Supprime les puces par défaut */
-    padding-left: 0; /* Supprime le padding par défaut */
-    margin-bottom: 20px; /* Espacement après la liste */
+    list-style-type: none; 
+    padding-left: 0; 
+    margin-bottom: 20px; 
 }
 
 .containere ul li {
-    padding: 15px; /* Espacement intérieur */
-    margin: 10px 0; /* Espacement entre les éléments */
-    background-color: white; /* Fond blanc */
-    border: 1px solid #e0e0e0; /* Bordure subtile */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    font-size: 1em; /* Taille de police */
-    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
-    animation-fill-mode: both; /* Garde l'état final de l'animation */
+    padding: 15px; 
+    margin: 10px 0;
+    background-color: white; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 1em; 
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
 }
 
 .containere ul li:nth-child(1) { animation-delay: 0.8s; }
@@ -749,43 +692,42 @@ main {
 .containere ul li:nth-child(6) { animation-delay: 1.8s; }
 
 /* Style du paragraphe de contact */
-.contacte {
-    background-color: #4CAF50; /* Couleur de fond verte */
-    color: white; /* Texte en blanc */
-    padding: 20px; /* Espacement intérieur */
-    border-radius: 8px; /* Coins arrondis */
-    text-align: center; /* Centrage du texte */
-    font-weight: bold; /* Texte en gras */
-    margin-top: 30px; /* Espacement avant le paragraphe */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
-    animation-delay: 2s; /* Délai d'animation */
-    animation-fill-mode: both; /* Garde l'état final de l'animation */
+.contacte a{
+    background-color: #4CAF50; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold; 
+    margin-top: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out; 
+    animation-delay: 2s; 
+    animation-fill-mode: both; 
 }
 
 /* Effet au survol pour le paragraphe de contact */
-.contacte:hover {
-    background-color: #45a049; /* Changement de couleur au survol */
-    transform: scale(1.05); /* Légère augmentation de taille */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition douce */
+.contacte a:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 /* Style pour les titres (optionnel, si vous ajoutez un titre plus tard) */
 .containere h2 {
-    font-size: 2em; /* Taille de police */
-    color: #4CAF50; /* Couleur verte */
-    margin-bottom: 20px; /* Espacement après le titre */
-    text-align: center; /* Centrage du titre */
-    animation: fadeInUp 0.8s ease-out; /* Animation d'apparition */
-    animation-fill-mode: both; /* Garde l'état final de l'animation */
+    font-size: 2em; 
+    color: #4CAF50; 
+    margin-bottom: 20px; /
+    text-align: center; 
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both; 
 }
 
-/* Amélioration de la typographie pour les liens (optionnel) */
 .containere a {
-    color: #4CAF50; /* Couleur des liens */
-    text-decoration: none; /* Supprime le soulignement */
+    color: #4CAF50;
+    text-decoration: none;
 }
 
 .containere a:hover {
-    text-decoration: underline; /* Soulignement au survol */
+    text-decoration: underline;
 }
