@@ -23,7 +23,7 @@ Etape 4 (marie-gayraud, le 05/04/2025):
 - Ajout d'une image logo.png
 - Conversion des images PNG en JPG, ainsi que de leur dimensions en pixel pour réduire leur taille et leur temps de chargement
 - Correction des liens défectueux contact.html
-- Renommage plus cours des sous-menus services pour un affichage optimal sur mobile
+- Renommage des liens des sous-menus services pour un affichage raccourci sur mobile
 - Modification des JSON LD pour ajouter informations pertinentes
 - Ajout des propriétés meta open graph sur chaque page html
 
