@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noa Pons, étudiant à l'UCA</title>
+        <meta name="description" content="Noa Pons est un étudiant à l'université cote d'azur. Il y étudie les sciences de l'information et de la communication">
+        <!-- Open Graph (protocol)-->
+        <meta property="og:title" content="Noa Pons, étudiant à l'UCA">
+        <meta property="og:descripton" content="Noa Pons est un étudiant à l'université cote d'azur. Il y étudie les sciences de l'information et de la communication">
+        <meta property="og:url" content="https://noaponsleroi.fr">
+        <meta property="og:type" content="profile">
+        <meta property="profile:first_name" content="Noa" />
+        <meta property="profile:last_name" content="Pons" />
+        <meta property="profile:username" content="Nonolezozo" />
+        <meta property="profile:gender" content="male" />
+        <!--Twitter cards-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Nonolezozo" />
+        <meta name="twitter:title" content="Profil de Nonolezozo" />
+        <meta name="twitter:description" content="etudiant qui mange des pates" />
+        <meta name="twitter:image" content="https://www.noaponsleroi.fr/images/photo-profil.jpg" />
+        <meta name="twitter:image:alt" content="Photo de profil de Nonolezozo" />
+        <style>
+            :root {
+                --primary: #4361ee;
+                --secondary: #3f37c9;
+                --accent: #f72585;
+                --light: #f8f9fa;
+                --dark: #212529;
+                --gray: #6c757d;
+                --success: #4cc9f0;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: var(--dark);
+                background-color: var(--light);
+                padding: 0;
+                margin: 0;
+            }
+            
+            header {
+                background: linear-gradient(135deg, var(--primary), var(--secondary));
+                color: white;
+                padding: 2rem 1rem;
+                text-align: center;
+                margin-bottom: 2rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                font-weight: 700;
+            }
+            
+            h2 {
+                font-size: 2rem;
+                color: var(--primary);
+                margin: 1.5rem 0 1rem;
+                border-bottom: 2px solid var(--accent);
+                padding-bottom: 0.5rem;
+                display: inline-block;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+                color: var(--secondary);
+                margin: 1rem 0 0.5rem;
+            }
+            
+            nav {
+                margin-top: 1.5rem;
+            }
+            
+            nav ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+                list-style: none;
+            }
+            
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0.2);
+                transition: all 0.3s ease;
+                font-weight: 500;
+            }
+            
+            nav a:hover {
+                background-color: var(--accent);
+                transform: translateY(-2px);
+            }
+            
+            main {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+            
+            section {
+                margin-bottom: 3rem;
+                background-color: white;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+            }
+            
+            section:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            }
+            
+            article {
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.5rem;
+                border-bottom: 1px dashed var(--gray);
+            }
+            
+            article:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            
+            p {
+                margin-bottom: 1rem;
+            }
+            
+            ul {
+                margin-left: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            li {
+                margin-bottom: 0.5rem;
+                position: relative;
+            }
+            
+            li::before {
+                content: "•";
+                color: var(--accent);
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+            
+            hr {
+                border: none;
+                height: 1px;
+                background-color: var(--gray);
+                margin: 2rem 0;
+                opacity: 0.2;
+            }
+            
+            footer {
+                text-align: center;
+                padding: 1.5rem;
+                color: var(--gray);
+                font-size: 0.9rem;
+            }
+            
+            /* Animation */
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            
+            section {
+                animation: fadeIn 0.6s ease forwards;
+            }
+            
+            section:nth-child(1) { animation-delay: 0.1s; }
+            section:nth-child(2) { animation-delay: 0.2s; }
+            section:nth-child(3) { animation-delay: 0.3s; }
+            section:nth-child(4) { animation-delay: 0.4s; }
+            section:nth-child(5) { animation-delay: 0.5s; }
+            section:nth-child(6) { animation-delay: 0.6s; }
+            
+            /* Responsive */
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 2rem;
+                }
+                
+                nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                
+                main {
+                    padding: 0 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Le reste du code HTML reste inchangé -->
+        <header>
+            <h1>Pons Noa, étudiant à Nice</h1>
+            <nav>
+                <ul>
+                    <li><a href="#parcours">Parcours</a></li>
+                    <li><a href="#experience">Experience professionnelle</a></li>
+                    <li><a href="#projet">Projet professionnel</a></li>
+                    <li><a href="#specialite">Spécialités Culinaires</a></li>
+                    <li><a href="#passions">Passions</a></li>
+                    <li><a href="#talents">Talents particuliers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="parcours">
+                <h2>Parcours</h2>
+                <p>Noa Pons, 21 ans, est un étudiant passionné par la communication et les médias, Mais ce ne fut pas toujours le cas. Pendant ses années lycée, il est passionné par la science. Il se dirige alors vers une licence de Physique chimie avec la moitié de ces cours en anglais. A la fin de la première année, il se réoriente en communication ayant compris que ce qui le motivait vraiement était le partage du savoir plutot que l'expertise.</p>
+            </section>
+            <section id="experience">
+                <h2>Expérience Professionnelle</h2>
+                <article>
+                    <h3>Assistant communication - Mairie de Nice (été 2023)</h3>
+                    <ul>
+                        <li>Rédaction de contenus pour les réseaux sociaux</li>
+                        <li>Participation à l'organisation d'événements culturels</li>
+                        <li>Création de supports visuels avec Canva</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Serveur polyvalent - Restaurant Le Bistrot (2021-2022)</h3>
+                    <ul>
+                        <li>Accueil et service des clients</li>
+                        <li>Gestion des réservations</li>
+                        <li>Travail en équipe en salle et en cuisine</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Bénévole - Festival du Livre de Nice (2022)</h3>
+                    <ul>
+                        <li>Accueil des auteurs et du public</li>
+                        <li>Animation des stands</li>
+                        <li>Logistique événementielle</li>
+                    </ul>
+                </article>
+            </section>
+            <section id="projet">
+                <h2>Projet professionnel</h2>
+                <p>Mon objectif est de travailler dans le domaine de la communication culturelle, en particulier pour des institutions ou événements liés à la musique et aux arts. Je souhaite allier mes compétences en communication avec mes passions personnelles.</p>
+                <p>À moyen terme, j'envisage :</p>
+                <ul>
+                    <li>Obtenir un master en communication culturelle</li>
+                    <li>Effectuer un stage dans une maison d'édition musicale ou un festival</li>
+                    <li>Développer mes compétences en gestion de projet événementiel</li>
+                    <li>Me spécialiser dans la médiation scientifique et culturelle</li>
+                </ul>
+                <p>À long terme, j'aimerais coordonner la communication d'un festival ou d'une structure culturelle, avec une approche innovante et accessible.</p>
+            </section>
+            <section id="specialite">
+                <h2>Spécialités Culinaires</h2>
+                <ul>
+                    <li>Pates Carbos</li>
+                    <li>[rien d'autre]</li>
+                </ul>
+            </section>
+            <section id="passions">
+                <h2>Passions</h2>
+                <ul>
+                    <li>Musique</li>
+                    <li>Cuisine</li>
+                    <li>Escalade</li>
+                    <li>Vivre en général</li>
+                </ul>
+            </section>
+            <section id="talents">
+                <h2>Talents particuliers</h2>
+                <ul>
+                    <li>se blesser très vite</li>
+                    <li>3 comprimés à prendre par jour à 21 ans</li>
+                </ul>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>© M GRESEL - Cours "Web sémantique"</p>
+        </footer>
+    </body>
+</html>
