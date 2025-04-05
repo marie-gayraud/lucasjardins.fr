@@ -26,8 +26,9 @@ Etape 4 (marie-gayraud, le 05/04/2025):
 - Renommage des liens des sous-menus services pour un affichage raccourci sur mobile
 - Modification des JSON LD pour ajouter informations pertinentes
 - Ajout des propriétés meta open graph sur chaque page html
-- Optimisation du css pour supprimer les éléments inutiles
+- Optimisation du css pour supprimer les éléments redondants
 - Correction du pied de page dans service-3.html
-- Correction de bouton contact dans index.html
+- Correction affichage du bouton contact dans index.html
+- Ajout d'une icone favicon pour chaque page
 
 
