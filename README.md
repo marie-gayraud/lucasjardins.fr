@@ -30,5 +30,6 @@ Etape 4 (marie-gayraud, le 05/04/2025):
 - Correction du pied de page dans service-3.html
 - Correction affichage du bouton contact dans index.html
 - Ajout d'une icone favicon pour chaque page
+- Ajout balise twitter pour chaque page
 
 
