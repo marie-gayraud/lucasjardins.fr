@@ -2,7 +2,7 @@
 Etape 1 (marie-gayraud, le 01/03/2025): 
 - Création d'un "repository" sur github pour pouvoir stocker et partager le code source
 - Création d'une page index.html avec un fichier css contenant des couleurs sur les tons de vert pour être dans le thême des plantes
-- AJout de 3 sections sur chaque page: header, section, footer
+- Ajout de 3 sections sur chaque page: header, section, footer
 - Ajout de pages vierges contact.html, services.html , achievements.html, faq.html
 - Ajout d'un menu horizontal avec les liens Contact, Services, Réalisation, FAQ
 - Ajout d'un burger menu pour pouvoir afficher les menu horizonal sous format vertical pour les smartphones
@@ -31,5 +31,5 @@ Etape 4 (marie-gayraud, le 05/04/2025):
 - Correction affichage du bouton contact dans index.html
 - Ajout d'une icone favicon pour chaque page
 - Ajout balise twitter pour chaque page
-
+- Ajout page de présentation Marie Gayraud et Noa Pons
 
